@@ -1,0 +1,33 @@
+
+/* In one container if i want to give all the styling at the same time just
+calling the selector and make it change color  */
+/* div > p {
+    color: blue;
+  } */
+
+   /* div p {
+    color: blue ;
+  }  */
+
+  
+  /* Styles for all <span> elements inside any <div> */
+  /* div > p  {
+    font-weight: bold;
+    background-color: aqua;
+  } */
+  
+  /* Styles for any <p> immediately following an <h2> */
+  /* h2 + p {
+    margin-top: 10px;
+  } */
+  
+  /* Styles for all <p> elements that are siblings of an <h2> and appear after it */
+  /* h2 ~ p {
+    font-style: italic;
+  } */
+
+
+  /* ~ before not apply */
+  /* + just following  not all */
+  /*   div > p */
+  

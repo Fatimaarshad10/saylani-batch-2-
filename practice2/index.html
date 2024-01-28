@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .neu-button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 15px;
+            box-shadow: 8px 8px 15px #b8b8b8, -8px -8px 15px #ffffff;
+            transition: box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .neu-button:hover {
+            box-shadow: 12px 12px 20px #b8b8b8, -12px -12px 20px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <button class="neu-button" onclick="animateButton()">Click me</button>
+
+    <script>
+        function animateButton() {
+            // You can add your custom animation logic here
+            alert('Button clicked!');
+        }
+    </script>
+</body>
+</html>
