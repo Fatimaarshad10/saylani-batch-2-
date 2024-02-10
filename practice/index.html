@@ -5,12 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 </head>
-<body>
+<style>
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:ital,wght@1,900&display=swap'); */
+html{
+    font-size: 10px;
+    
+    /* font-family: 'Montserrat', sans-serif; */
+}
+@font-face {
+font-family: 'ChunkFiveRegular';
+src: url('./ResotE-Rose-89c1.woff');}
 
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.parent {
+  animation: blink 1s infinite; /* Blinking animation with a 1-second duration, set to repeat infinitely */
+}
+/* 
+The .parent element has a font size of 20px.
+The .child element has a font size of 40px. */
+.container {
+  text-align: center; /* Center content horizontally */
+  height: 200px; /* Specify a height for demonstration */
+  line-height: 200px; /* Center content vertically using line-height */
+}
+
+.aligned-image {
+  vertical-align: center
+  ; /* Vertically align the image in the middle of the line-height */
+}
+
+.aligned-text {
+  vertical-align: middle; /* Vertically align the text in the middle of the line-height */
+
+  /* text-decoration: underline; */
+/* text-decoration: underline dotted;
+text-decoration: underline dotted blue; */
+/* text-decoration: underline overline; */
+/* text-decoration: blue wavy underline; */
+/* text-decoration: line-through; */
+}
+.container1 {
+  text-align: center; /* Center content horizontally */
+  height: 200px; /* Specify a height for demonstration */
+  line-height: 200px; /* Center content vertically using line-height */
+  
+}
+
+.baseline-text {
+  vertical-align: baseline; /* Align the text based on the baseline */
+  /* horizontal vertical blur  */
+}
+
+.baseline-image img {
+  vertical-align: baseline; /* Align the image based on the baseline */
+  margin-left: 10px; /* Add some spacing for better visual appearance */
+}
+h5 {
+
+/* text-indent: 50px; */
+text-shadow: 1px 2px 4px red; 
+}
+/* Hover state */
+button:hover {
+  background-color: #d6e5f0;
+}
+
+/* Active state */
+button:active {
+  background-color: #8c5821;
+}
+
+/* Focus state */
+button:focus {
+  outline: 2px solid #ff4500; /* Adding an outline for focus */
+}
+    </style>
+
+<!-- 
+For example, let's say if there's a user who has 
+set their browser's font size as 20px but you had set your webpage's
+ font size as 16px then the browser will show your webpage's 
+content in 16px and not in 20px and that's the problem. -->
+<body>
+    <button>hhghg</button>
+<h5>jjjhhhhhhhhh</h5>
     <table id="table1"></table>
     <div id="box-container"></div>
 <div id="table2Container"></div>
 
+  <div class="container">
+    <img src="../practice2/programmer.jpg" alt="Example Image" class="aligned-image">
+    <span class="aligned-text">This is some text.</span>
+  </div>
+  <!-- <div class="container1">
+    <span class="baseline-text">This is some text.</span>
+    <span class="baseline-image"><img src="../practice2/programmer.jpg" alt="Example Image"></span>
+  </div> -->
     <script src="./javaScript.js"></script>
 </body>
 </html>

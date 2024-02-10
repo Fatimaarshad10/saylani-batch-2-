@@ -1,0 +1,38 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+@font-face {
+    font-family: 'fatima';
+    src: url('./BigParty4Blue-2575.woff');
+} */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'fatima';
+}
+/* h1{
+    background-color: aqua;
+} */
+.heading{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 150px;
+    font-size: 7rem; 
+    text-decoration: line-through;
+}
+
+.parent{
+    font-size: 2rem;
+}
+.child{
+    font-size: 100%;
+}
+
+a{
+    text-decoration: underline ;
+}
