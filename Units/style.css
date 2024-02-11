@@ -1,0 +1,27 @@
+/* .box {
+    width: 500%;
+    height: 100px;
+    background-color: powderblue;
+  }
+
+   .text{ 
+         background-color: rgb(0,0,0);
+        opacity: 0.1;  
+        background-color: #801414;
+background-color: hsl(0, 13%, 77%);
+  } 
+  */
+
+
+  
+  html {
+    font-size: 16px; /* Set the base font size for the root element to 16 pixels */
+}
+
+.box {
+    font-size: 20px; /* Font size for the box is 20 pixels */
+}
+
+.text {
+    font-size: 1em; /* Font size for the text is 1em, relative to the parent (.box) font size */
+}

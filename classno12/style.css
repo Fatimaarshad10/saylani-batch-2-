@@ -1,0 +1,49 @@
+html{
+    font-size: 20px;
+}
+
+.box{
+    font-size: 1rem;
+    /* font-weight: 800; */
+    font-weight: normal;
+    font-style: oblique;
+    text-transform: capitalize;
+    line-height: 2em;
+    background-color: blueviolet;
+    /* letter-spacing: 1em; */
+    /* word-spacing: 2rem; */
+    text-align: justify;
+}
+p{
+    text-align: justify;
+    text-indent: -100px;
+}
+.text-1{
+    vertical-align: sub;
+    line-height: 6em;
+    background-color: brown;
+}
+/* .text{
+    font-size: 1rem;
+}
+.second{
+    font-size: 1em;
+} */
+
+/* .box
+{
+    width: 100px;
+    max-width: 100%;
+    background-color: brown;
+    color: white;
+} */
+
+
+.container{
+    max-width: 50%;
+    /* height: 800%; */
+    padding: 80px;
+    padding-right: 20px;
+    background-color: #EBEFFF;
+    box-shadow: 70px -48px 64px -2px rgba(0,0,0,0.75);
+}
