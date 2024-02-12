@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+}
+/* Section no 1 */
+html {
+  font-size: 16px;
+}
+.navbar {
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+.logo {
+  text-align: left;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  margin-right: 23rem;
+}
+a {
+  padding: 0rem 1.7rem;
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+  text-decoration: none;
+  color: #717275;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.home-image {
+  background-image: url("./images/wood-sideboard-living-room-interior-with-copy-space.jpg");
+  background-repeat: no-repeat;
+  padding: 12rem 0rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.text-container {
+  margin-top: -4rem;
+  max-width: 50%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+.input-box {
+  background-color: #ffffff;
+  padding: 2rem 0.3rem;
+  border-radius: 0.8rem;
+  width: 50%;
+  margin: auto;
+}
+.heading {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+}
+.welcome p {
+  color: #00a05d;
+  display: inline;
+}
+.btn {
+  background-color: #f65b35;
+  border: none;
+  padding: 0.9rem;
+  color: white;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+input {
+  padding: 1rem;
+  border-color: #e9eaeb;
+}
+/* Section no 2 */
+.our-story {
+  padding: 3rem;
+  background-color: #f8f9fa;
+  padding-bottom: 9rem;
+}
+.story-text {
+  width: 36%;
+  display: inline-block;
+  padding: 0.6rem;
+  margin-left: 3rem;
+  margin-right: 4rem;
+}
+.story-text h5 {
+  color: #00a05d;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.story-text span {
+  color: #6c757d;
+  font-family: "Roboto", sans-serif;
+}
+.story-text h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+.story-text h2 {
+  color: #6c757d;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.story-text p {
+  color: #717275;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.round-image {
+  border-radius: 50%;
+  max-width: 230px;
+  height: 230px;
+  margin-right: 1rem;
+}
+.round-image1 {
+  border-radius: 50%;
+  max-width: 290px;
+  height: 290px;
+}
+
+/* Section no 3  */
+
+.opening-hours {
+  background-image: url("./images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg");
+  background-repeat: no-repeat;
+  padding: 9rem 0;
+  background-position: center;
+  background-size: cover;
+}
+.opening-card {
+  background-color: #e9eaeb;
+  width: 30%;
+  padding: 7rem;
+  margin-left: 6rem;
+  border-radius: 15px;
+  padding-left: 0rem;
+  padding-bottom: 5rem;
+}
+.line {
+  background-color: #f65b35;
+  padding: 0.6rem 3.5rem;
+  width: 100%;
+  margin-top: -7rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.opening-card h1 {
+  font-size: 2.6rem;
+  margin: 28px 0;
+  padding-left: 4rem;
+}
+.opening-card p {
+  margin-top: -1.6rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-left: 7rem;
+
+}
+.opening-span {
+  margin-left: 4rem;
+}
+
+.opening-light {
+  color: #717275;
+}
+.opening-bold {
+  color: #6c757d;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Section no 4  */
+
+.products-text {
+  width: 50%;
+  padding: 5rem;
+  padding-bottom: 3rem;
+}
+.products-text h5 {
+  margin-bottom: 1rem;
+}
+.products-text h1 {
+  font-size: 2.7rem;
+  font-family: "Roboto", sans-serif;
+}
+.interior-products {
+  margin-bottom: 6rem;
+}
+.interior-products img {
+  max-width: 90%;
+  border-radius: 1rem;
+}
+.card-1 {
+  max-width: 30%;
+  text-align: right;
+  display: inline-block;
+  margin-left: 2rem;
+}
+.card-1 h1 {
+  text-align: left;
+  margin-left: 3rem;
+}
+.card-2 {
+  max-width: 30%;
+  text-align: center;
+  display: inline-block;
+}
+.card-2 h1 {
+  text-align: left;
+  margin-left: 2rem;
+}
+.card-3 {
+  max-width: 30%;
+  display: inline-block;
+  text-align: left;
+}
+.card-3 h1 {
+  text-align: left;
+}
+
+/* Section no 4  */
+footer {
+  background-color: #36363e;
+  padding: 10rem;
+  padding-left: 5rem;
+  color: #f8f9fa;
+}
+.cards {
+  width: 100%;
+}
+
+.first,
+.second,
+.third {
+  width: 33.33%;
+  vertical-align: top;
+  padding: 10px;
+  border: none;
+}
+
+.first {
+  text-align: left;
+}
+
+.second {
+  text-align: center;
+}
+
+.third {
+  text-align: right;
+}
+
+.first h1,
+.second h1,
+.third h1 {
+  font-family: "Roboto", sans-serif;
+}
+.first p {
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.first span {
+  color: #5d5d67;
+}
+
+.second p {
+  margin-top: 1rem;
+}
+.third p {
+  margin-top: 1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.social-links img {
+  width: 1.5rem;
+  margin: 0.5rem;
+}
+
+
