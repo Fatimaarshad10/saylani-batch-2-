@@ -253,37 +253,58 @@ left increased move to next step **/
  * @param {number[]} nums
  * @return {number[]}
  */
-var largestDivisibleSubset = function(nums) {
-  if (nums.length === 0) {
-      return [];
-  }
+// var largestDivisibleSubset = function(nums) {
+//   if (nums.length === 0) {
+//       return [];
+//   }
 
-  nums.sort((a, b) => a - b);
+//   nums.sort((a, b) => a - b);
 
-  let dp = new Array(nums.length).fill(1);
-  let prevIndex = new Array(nums.length).fill(-1);
-  let maxIndex = 0;
+//   let dp = new Array(nums.length).fill(1);
+//   let prevIndex = new Array(nums.length).fill(-1);
+//   let maxIndex = 0;
 
-  for (let i = 1; i < nums.length; i++) {
-      for (let j = i - 1; j >= 0; j--) {
-          if (nums[i] % nums[j] === 0 && dp[i] < dp[j] + 1) {
-              dp[i] = dp[j] + 1;
-              prevIndex[i] = j;
-          }
-      }
+//   for (let i = 1; i < nums.length; i++) {
+//       for (let j = i - 1; j >= 0; j--) {
+//           if (nums[i] % nums[j] === 0 && dp[i] < dp[j] + 1) {
+//               dp[i] = dp[j] + 1;
+//               prevIndex[i] = j;
+//           }
+//       }
 
-      if (dp[i] > dp[maxIndex]) {
-          maxIndex = i;
-      }
-  }
+//       if (dp[i] > dp[maxIndex]) {
+//           maxIndex = i;
+//       }
+//   }
 
-  let result = [];
-  let currentIndex = maxIndex;
-  while (currentIndex !== -1) {
-      result.unshift(nums[currentIndex]);
-      currentIndex = prevIndex[currentIndex];
-  }
+//   let result = [];
+//   let currentIndex = maxIndex;
+//   while (currentIndex !== -1) {
+//       result.unshift(nums[currentIndex]);
+//       currentIndex = prevIndex[currentIndex];
+//   }
 
-  return result;
+//   return result;
+// };
+// largestDivisibleSubset([1,2,4,8])
+
+
+/**
+ * @param {number[]} arr
+ * @return {void} Do not return anything, modify arr in-place instead.
+ */
+var duplicateZeros = function(arr) {
+    const originalLength = arr.length;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 0) {
+            arr.splice(i, 0, 0);
+            i++;  
+        }
+    }
+    arr.length = originalLength;
 };
-largestDivisibleSubset([1,2,4,8])
+
+duplicateZeros([1,0,2,3,0,4,5,0])
+
+// [1,0,0,2,3,0,0,4]
