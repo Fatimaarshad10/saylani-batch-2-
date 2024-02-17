@@ -1,0 +1,69 @@
+/* span{
+    background-color: brown;
+} */
+/* p::first-letter{
+    background-color: brown;
+    font-size: 20px;
+    color: aqua;
+}
+p::first-line{
+    background-color: burlywood;
+} */
+/* .first::first-letter{
+    background-color: brown;
+
+} */
+/* span{
+    background-color: blueviolet;
+} */
+
+/* .atag:link{
+    color: rgb(22, 182, 70)
+}
+.atag:visited{
+    color: rgb(54, 111, 113);
+} */
+
+.btn:hover {
+  /* background-color: aqua; */
+  width: 200px;
+  content: "helooskndfns";
+}
+
+.btn:active {
+  background-color: rgb(164, 12, 30);
+}
+
+input {
+  /* border: none; */
+}
+input:focus {
+  /* border: 2px solid blue; */
+  /* outline: none; */
+}
+
+.box {
+  /* width: 100px; */
+  max-width: 1000px;
+  /* min-width: 200px; */
+  min-height: 200px;
+  padding: 40px;
+  background-color: brown;
+}
+
+h2,
+p {
+  width: 20px;
+  font-size: 90%;
+  line-height: 1.2em;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+h2 {
+  color: #0088dd;
+  border-bottom: 1px solid #0088dd;
+}
+p {
+  min-height: 10px;
+  max-height: 30px;
+}
