@@ -58,6 +58,7 @@ p {
   line-height: 1.2em;
   overflow-y: hidden;
   overflow-x: scroll;
+  background-color: #0088dd;
 }
 h2 {
   color: #0088dd;
