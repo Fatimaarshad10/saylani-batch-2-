@@ -54,10 +54,10 @@ button{
 
 
     .first {
-        width: 50px;
-        background-color: brown;
+        /* width: 50px; */
+        /* background-color: brown; */
         /* position: relative; */
-        padding: 50px;
+        /* padding: 50px; */
         /* top: 30px; */
 
         /* margin-; */
@@ -66,10 +66,10 @@ button{
     }
 
     .second {
-        width: 50px;
-        background-color: cadetblue;
+        /* width: 50px; */
+        /* background-color: cadetblue; */
         /* position: absolute; */
-        padding: 50px;
+        /* padding: 50px; */
         /* z-index: 7; */
         /* float: left; */
     }
@@ -80,10 +80,41 @@ button{
 li.one{
     float: right ;
 } */
+
+.first{
+    /* background-color: blue; */
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+
+    /* transform: translate(50px, 100px); */
+}
+.second{
+    background-color: aqua;
+    position: absolute;
+    /* margin-top: -60px; */
+}
 </style>
 
 <body>
-    <ul>
+    <div class="first">
+        hello
+        
+    </div>
+    <div class="second">
+        hello
+    </div>
+    
+
+    <!-- <ul>
 
         <li class="one">
             <a href="#first">first</a>
@@ -143,7 +174,7 @@ li.one{
         <h1>hello</h1>
         <h1>hello</h1>
 
-    </div>
+    </div> -->
     <!-- <span class="material-symbols-outlined">
         home
         </span>
