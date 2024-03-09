@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "jiteshkumar.bootstrap-snippets",
+        "formulahendry.auto-rename-tag",
+        "ecmel.vscode-html-css",
+        "kisstkondoros.vscode-gutter-preview",
+        "sburg.vscode-javascript-booster",
+        "pkief.material-icon-theme",
+        "anbuselvanrocky.bootstrap5-vscode"
+    ]
+}
