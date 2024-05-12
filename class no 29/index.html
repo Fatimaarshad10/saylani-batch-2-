@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 29</title>
+</head>
+
+<body>
+    <script>
+        // Destructure And Spread operator
+        const User = {
+            name: 'amna',
+            age: 30,
+            rollNo: 2324,
+            address: "ABC",
+            gender: 'female',
+            city: 'Faisalabad'
+
+        }
+        const { name: firstName, ...hello } = User
+        console.log(hello.gender)
+
+
+        const arrayNo1 = [1, 2, 4, 5, 6]
+        const [s, j, ...second] = arrayNo1
+        console.log(s)
+        console.log(j)
+        console.log(second)
+        const array1 = [1, 2, 3, 4, 5, 6, 7];
+        const array2 = [];
+        for (let i = 0; i <= array1.length; i++) {
+            const result = array1[i] % 2;
+            if (result == 0) {
+                array2.push(array1[i]);
+            }
+        }
+        console.log(array2);
+
+    </script>
+</body>
+
+</html>
