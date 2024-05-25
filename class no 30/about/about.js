@@ -47,8 +47,8 @@
 // const houseNo1 = new House('saylaniHouse' , 'Faislabad' , '999' , 78)
 // console.log(houseNo1 )
 
-var name = 233
-var name = "fatima"
+// var name = 233
+// var name = "fatima"
 
 
-export default name 
+// export default name 
