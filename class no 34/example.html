@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Data in Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON Data in Table</h1>
+    <table id="data-table">
+        <thead>
+            <tr id="table-head"></tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script>
+        const jsonData = [
+            { "name": "John Doe", "age": 30, "email": "john@example.com" },
+            { "name": "Jane Smith", "age": 25, "email": "jane@example.com" },
+            { "name": "Mike Johnson", "age": 35, "email": "mike@example.com" }
+        ];
+
+        function createTableFromJSON(jsonData) {
+            const tableHead = document.getElementById('table-head');
+            const tableBody = document.getElementById('table-body');
+
+            // Create table headers
+            const headers = Object.keys(jsonData[0]);
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.textContent = header.charAt(0).toUpperCase() + header.slice(1);
+                tableHead.appendChild(th);
+            });
+
+            // Create table rows
+            jsonData.forEach(item => {
+                const tr = document.createElement('tr');
+                headers.forEach(header => {
+                    const td = document.createElement('td');
+                    td.textContent = item[header];
+                    tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Call the function to create the table
+        createTableFromJSON(jsonData);
+    </script>
+</body>
+</html>

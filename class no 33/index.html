@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 33</title>
+</head>
+<style>
+    /* h1{
+        color : red;
+        background-color: black;
+
+    } */
+</style>
+
+<body>
+    <!-- <div class="heading">
+    </div> -->
+    <!-- <button onclick="clickMe()" id="btn">Click me </button> -->
+    <h1>1</h1>
+    <button onclick="previous()" id="btn">Previous </button>
+    <button onclick="next()" id="btn">Next </button>
+    <script>
+        let no = 1 
+        function previous() {
+            no = no - 1
+            document.getElementsByTagName('h1')[0].innerText = no
+
+        }
+        function next() {
+            no = no + 1
+            document.getElementsByTagName('h1')[0].innerText = no
+
+
+        }
+
+
+
+        // function clickMe (){
+        //     // alert("You clicked me ")
+        //     document.getElementById('btn').style.backgroundColor = 'red'
+        // }
+        // document.getElementById('heading').innerText = 'hello heading'
+        // document.getElementById('heading').innerHTML= 'hello heading'
+        // document.getElementsByTagName('h1')[0].innerHTML = 'hello'
+        // document.getElementsByTagName('h1')[1].innerHTML = 'hello'
+        // document.getElementsByTagName('h1')[2].innerHTML = 'hello'
+        //  document.getElementsByTagName('h1')[0].innerText = 'No this is on index 0 '
+        // let lengthOfHeading = document.getElementsByTagName('h1').length
+        // // console.log(lengthOfHeading)
+
+        // for (let i = 0; i < lengthOfHeading; i++) {
+        //     document.getElementsByTagName('h1')[i].style.color = 'red'
+        //     // document.getElementsByTagName('h1')[i].style.backgroundColor = 'black'
+        //     document.getElementsByTagName('h1')[i].style.border = '2px solid black'
+
+        //     document.getElementsByTagName('h1')[i].innerText = 'No this is on index 0 '
+        //     // document.getElementsByTagName('h1')[i].innerHTML = 'hello'
+
+        // }
+        // const array = [1,2,3,4]
+        // console.log(array[1])
+
+    </script>
+</body>
+
+</html>
