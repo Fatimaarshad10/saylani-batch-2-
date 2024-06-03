@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 34</title>
+</head>
+<body>
+
+  <!-- var newElement = document.createElement("div");
+newElement.textContent = "This is a new element";
+var parentElement = document.getElementById("parentElementId");
+parentElement.appendChild(newElement);
+var element = document.getElementById("myElementId");
+element.remove();
+var button = document.getElementById("myButtonId");
+button.addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+    </form> -->
+
+    <button onmouseover="over()" id="btn">Over</button>
+    <button onmouseout="out()" id="btn1">Out</button>
+
+  <script>
+    function over(){
+      // alert("It's work")
+      document.getElementById('btn').style.background = 'purple'
+      document.getElementById('btn').style.width = "100px"
+
+    }
+    function out(){
+      // alert("It's work")
+      document.getElementById('btn1').style.background = 'black'
+      document.getElementById('btn1').style.width = "50px"
+
+    }
+
+  </script>
+</body>
+</html>
+
+
+
