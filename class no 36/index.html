@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 36</title>
+</head>
+<body>
+    <!-- Calculator -->
+     <!-- First number -->
+    <input type="number" placeholder="First_number" id="first_no">
+     <!-- Second number -->
+    <input type="number" placeholder="second_number" id="second_no">
+    <!-- Dropdown menu -->
+     <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+     </select>
+     <!-- Converter -->
+    <button onclick="converter()">Converter</button>
+    <!-- Output input field -->
+     <input type="number" id="output" placeholder="output">
+
+     <!-- <input type="text" onchange="text_change(event)"> -->
+      <input type="text " id="textChange">
+      <h1 id="head"></h1>
+    <script>
+        document.getElementById('textChange').addEventListener('change' , (e)=>{
+            document.getElementById('head').innerHTML = e.target.value
+        })
+        // function real_text(e){
+        //     // console.log(e.target.value)
+        //     document.getElementById('head').innerHTML = e.target.value
+        // }
+        // function text_change(e){
+        //     console.log(e.target.value)
+        // }
+       function converter(){
+        const first_no =parseInt(document.getElementById('first_no').value) 
+        const second_no =parseInt(document.getElementById('second_no').value) 
+        const operator = document.getElementById('operator').value
+        const output = document.getElementById('output')
+        let result;
+        if(operator === '+'){
+            result = first_no + second_no
+        }
+        else if (operator === '-'){
+            result = first_no - second_no
+        }
+        else if (operator === '*'){
+            result = first_no * second_no
+        }
+        else{
+            alert('No operator selected')
+        }
+        output.value = result
+       } 
+    </script>
+</body>
+</html>
