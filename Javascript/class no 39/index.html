@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        // var data = 10
+        // console.log(data)
+        // setTimeout(()=>{
+        //     console.log('faryal')
+        // },0)
+        // setTimeout(()=>{
+        //     console.log('amna')
+        // },1000)
+        // setTimeout(()=>{
+        //     console.log('ayesha')
+        // },2000)
+        // setTimeout(()=>{
+        //     console.log('kashaf')
+        // },3000)
+        // console.log('hello 0')
+        // setTimeout(() => {
+        //     console.log('hello 1 ')
+        // }, 0);
+        // console.log("hello 2")
+        // console.log("hello 2")
+        // console.log("hello 2")
+        // console.log("hello 2")
+        // console.log("hello 2")
+        // console.log("hello 2")
+        // function myDisplayer(data) {
+        //     console.log(data)
+        // }
+        // function myFirst() {
+        //     myDisplayer("Hello");
+        // }
+
+        // function mySecond() {
+        //     myDisplayer("Goodbye");
+        // }
+
+        // mySecond();
+        // myFirst();
+
+        function myDisplayer(some) {
+            document.getElementById("demo").innerHTML = some;
+        }
+
+        function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            myDisplayer(sum);
+
+        }
+        myCalculator(5, 5);
+    </script>
+    <!-- queue kashaf 3000 , ayesha 2000 , amna  1000, faryal 0000 -->
+    <!-- stack faryal 0000, amna 1000 , ayesha 2000,kashaf 3000-->
+    <!--  faryal -->
+
+</body>
+</html>
