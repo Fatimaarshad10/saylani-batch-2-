@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 41</title>
+</head>
+
+<body>
+    <script>
+        // Callback
+        // function calculate (){
+        //     console.log('This is for calculate')
+        // }
+        // function first (a,b){
+        //  calculate()
+        // }
+        // first(1,2)
+
+
+        // function getData(data) {
+        //     setTimeout(() => {
+        //         console.log('hello')
+        //         console.log(data)
+        //     }, 3000);
+        // }
+        // getData(2)
+        // getData(3)
+        // getData(4)
+        // getData(5)
+
+
+        // function getValue (first){
+        //     // console.log('value is' )
+        //     first()
+        // }
+        // getValue(()=>{
+        //     console.log('first')
+        // })
+
+        // Callback hell
+        // function getDay(value, nextFun) {
+        //     setTimeout(() => {
+        //         console.log(Day no ${value})
+        //         nextFun()
+        //     }, 2000);
+        // }
+        // getDay(1, () => {
+        //     console.log('first day.........')
+        //     getDay(2, () => {
+        //         console.log('second day.........')
+        //         getDay(3, () => {
+        //             console.log('Third day.........')
+        //             getDay(4, () => {
+        //                 console.log('fourth day.........')
+        //                 getDay(5, () => {
+        //                     console.log('fourth day.........')
+
+        //                 })
+        //             })
+        //         })
+        //     })
+        // })
+
+        // promise 
+        // const data = new Promise((resolve , reject)=>{
+        //     console.log("This is promise")
+        //     reject('error')
+        // })
+        //  state ==> (pending) , (fullfilled) , (rejected)
+        // handler ===> resolve , reject 
+        //  prototype promise 
+        //  reult = ?
+
+
+        // const newData = new Promise ((resolve , reject)=>{
+        //     console.log('this promise is in pending')
+        //     setTimeout(() => {
+        //         // console.log('This promise is fullfilled')
+        //         reject("Error")
+        //     }, 5000);
+        // })
+
+
+        // resolve === > .then  pending to fullfilled
+        // reject ===> .catch  pending to error 
+
+
+        // newData.then((res)=>{
+        // console.log('here is my data ')
+        // })
+        // newData.catch((res)=>{
+        //     console.log('error')
+        // })
+
+        // const dataPick = fetch('https://fakestoreapi.com/products/1')
+        // dataPick.then((res) => {
+        //     console.log(res)
+        // }).catch((err) => {
+        //     console.log(err)
+        // })
+
+
+        // function getDay(value) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log(`Day no ${value}`)
+        //             resolve('hello')
+        //         }, 2000);
+        //     })
+        // }
+        // console.log("first day........")
+        // getDay(1)
+        // .then((res) => {return getDay(2)})
+        // .then((res) => {return getDay(3)})
+        // .then((res) => {return getDay(4)})
+        // .then((res) => {return getDay(5)})
+        // .then((res) => {return getDay(6)})
+        // .then((res) => {return getDay(7)})
+        // .then((res) => {return getDay(8)})
+        // .then((res) => {console.log(res)})
+
+    </script>
+</body>
+
+</html>
