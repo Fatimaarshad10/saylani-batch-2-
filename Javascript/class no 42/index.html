@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+        <!-- <img src="" alt="" id="img"> -->
+    </div>
+</body>
+<script>
+    // var Data = 12;
+    // console.log(Data)
+
+    // function callback (){
+    //     console.log('this is callback function')
+    // }
+    // function myFunction (value){
+    //     value()
+    // }
+    // myFunction(()=>{
+    //     console.log('this is callback function')
+    // })
+
+    // myFunction('hello') //string
+    // myFunction(123) // number
+    // myFunction(true) // boolean
+    // myFunction(null)
+    // myFunction(undefined) 
+    // myFunction(23.343) //float
+    // myFunction([23,5,6,6]) //array
+    // myFunction({'name': 'fatima'}) //object
+    // function newData(value , next){
+    //     setTimeout(() =>{
+    //         console.log(value)
+    //         next()
+    //     },2000)
+    // }
+    // newData(3, ()=>{
+    //     newData(4,()=>{
+    //         console.log('end')
+    //     })
+    // })
+    // function calculate(){
+    //     newData(123)
+
+    // }
+    // calculate()
+
+
+    // const promise = new Promise((resolve , reject)=>{
+    //     reject('error')
+    // })
+    // console.log(promise)
+    //     promise.then((res)=>{
+    // console.log(res)
+    //     }).catch((err)=>{
+    //         console.log(err)
+    //     })
+    const title = document.getElementById('title')
+    const des = document.getElementById('description')
+    const img = document.getElementById('img')
+
+
+    const promise = fetch('https://fakestoreapi.com/products')
+    promise.then((res) => {
+        const data = res.json()
+        data.then((data) => {
+            data.map((data) => {
+                const heading = document.createElement('h1')
+
+                heading.innerHTML = data.title
+                des.innerHTML = data.description
+                const image = document.createElement('IMG')
+                image.setAttribute('src', `${ data.image }`)
+                document.body.appendChild(image);
+                document.body.appendChild(heading);
+
+            })
+
+            //    img.innerHTML = data[1].image
+        })
+
+        // console.log(res.json())
+    }).catch((err) => {
+        console.log(err)
+    })
+    // pending
+    // if success
+    // else failed
+</script>
+
+</html>

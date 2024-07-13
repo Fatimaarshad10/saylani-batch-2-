@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="conversionResult">
+        <!-- Conversion result will be displayed here -->
+    </div>
+    <!-- <p id="displayname"></p>
+    <input id="username"  type="text" placeholder="Enter your name">
+    <button id="clickme">Click me </button> -->
+    <script>
+        // const btn = document.getElementById('clickme')
+        // const username = document.getElementById('username')
+        // const displayname = document.getElementById('displayname')
+
+        // btn.addEventListener('click' , ()=>{
+        //     const value = username.value
+        //     localStorage.setItem('name' , value)
+        //     location.reload()
+        // })
+        // window.addEventListener('load' , ()=>{
+        //     const value = localStorage.getItem('name')
+        //     displayname.innerText = value 
+
+        // })
+
+
+
+        const apiKey = '4cb88b7ab78650167e7455c6'; // Replace with your ExchangeRate-API key
+        const baseCurrency = 'USD';
+        const targetCurrency = 'PKR';
+        const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${baseCurrency}`;
+
+        // Function to fetch currency exchange rates
+        function convertCurrency() {
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        const rate = data.conversion_rates[targetCurrency];
+                        const convertedAmount = 100 * rate;
+                        console.log(`100 ${baseCurrency} equals ${convertedAmount.toFixed(2)} ${targetCurrency}`);
+                        displayConversionResult(convertedAmount);
+                    } else {
+                        console.error('Error fetching exchange rates:', data.error);
+                    }
+                })
+                .catch(error => console.error('Error fetching exchange rates:', error));
+        }
+
+
+        // Function to display conversion result
+        function displayConversionResult(amount) {
+            const conversionResultDiv = document.getElementById('conversionResult');
+            const conversionHtml = `
+    <h2>Currency Conversion</h2>
+    <p>100 ${baseCurrency} equals ${amount.toFixed(2)} ${targetCurrency}</p>
+  `;
+            conversionResultDiv.innerHTML = conversionHtml;
+        }
+
+        // Call the function to fetch and convert currency
+        convertCurrency();
+
+        // callback 
+        // callback hell
+        // promise
+        // async and await
+
+        // function calculate(sum){
+        // console.log(sum)
+        // }
+        // function data(a,b , calculate){
+        //     return calculate(a+b)
+        // }
+        // data(10,2,calculate)
+
+        // function data(a,b , calculate){
+        //     return calculate(a+b)
+        // }
+        // data(10,2,(sum)=>{
+        //     console.log(sum)
+
+        // })
+
+        // function checkData (data){
+        // setTimeout(()=>{
+        //     console.log('dataId', data)
+        // },2000)
+        // }
+
+        // checkData(1)
+        // checkData(1)
+        // checkData(1)
+
+        // function checkData (data , getdata){
+        // setTimeout(()=>{
+        //     console.log('dataId', data)
+        //     if(getdata){
+        //         getdata()
+        //     }
+        // },2000)
+        // }
+        // // callback hell
+        // checkData(1, ()=>{
+        //     console.log('data no 2')
+        //     checkData(2,()=>{
+        //         console.log('data no 3')
+        //         checkData(3, ()=>{
+        //             console.log('data no 4')
+        //             checkData(4)
+        //         })
+        //     })
+        // })
+        // state and result
+        // pending
+        // fullfilled
+        // rejected
+        // let promise = new Promise((resolve , reject )=>{
+        //     console.log('hello this is is promise ')
+        //     reject('success')
+        // })
+
+
+        // function checkData(data, getdata) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('dataId', data)
+        //             resolve('success')
+        //             if (getdata) {
+        //                 getdata()
+        //             }
+        //         }, 2000)
+        //     })
+
+        // // }
+
+        // function getPromise(){
+        //     return new Promise((resolve , reject)=>{
+        //         console.log("I'm a promsie")
+        //         resolve('success')
+        //     })
+        // }
+        // let promiseData = getPromise()
+        // promiseData.then(()=>{
+        //     console.log('promise fullfilled')
+        // })
+        // promiseData.catch(()=>{
+        //     console.log('promise fullfilled')
+        // })
+
+        // promise chain
+        // function asynData (){
+        //     return new Promise ((resolve , reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('data1')
+        //             resolve('success')
+        //         },4000)
+        //     })
+        // }
+        //  function asynData2 (){
+        //     return new Promise ((resolve , reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('data1')
+        //             resolve('success')
+        //         },4000)
+        //     })
+        // }
+        // console.log('fetching data 1...........')
+        // const f1 = asynData()
+        // f1.then((res)=>{
+        //     console.log(res)
+        // console.log('fetching data 2...........')
+        // const f2 = asynData()
+
+        // f2.then((res)=>{
+        //     console.log(res)
+
+        // })
+
+        // })
+
+        // function asynData2 (){
+        //     return new Promise ((resolve , reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('data1')
+        //             resolve('success')
+        //         },4000)
+        //     })
+        // }
+        // const f2 = asynData2()
+        // f2.then((res)=>{
+        //     console.log(res)
+        // })
+
+
+        // function checkData(data) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('dataId', data)
+        //             resolve('success')
+
+        //         }, 2000)
+        //     })
+
+        // }
+        // checkData(1).then((res)=>{
+        //     return checkData(2)
+        // }).then((res)=>{
+        //     console.log(res)
+        // })
+
+
+
+        // function api (){
+        //     return new Promise((resolve , reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('get the weather data')
+        //             resolve(200)
+        //         },3000)
+        //     })
+        // }
+
+        // async function newFunction(){
+        //     await api ()
+        //     await api ()
+
+        // }
+
+
+        // function checkData(data) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('dataId', data)
+        //             resolve('success')
+
+        //         }, 2000)
+        //     })
+        // }
+        // async function newData (){
+        //     await checkData(2)
+        //     await checkData(3)
+        //     await checkData(4)
+
+        // }
+        // newData()
+
+        // async function getStudent() {
+        //     try {
+        //         const res = await fetch('https://freetestapi.com/api/v1/students');
+        //         const data = await res.json();
+        //         console.log(data);
+        //     } catch (error) {
+        //         console.error('Error fetching data:', error);
+        //     }
+        // }
+        // getStudent()
+
+        // function getStudent() {
+        //     fetch('https://freetestapi.com/api/v1/students')
+        //         .then(res => {
+        //             if (!res.ok) {
+        //                 throw new Error('Network response was not ok ' + res.statusText);
+        //             }
+        //             return res.json();
+        //         })
+        //         .then(data => {
+        //             console.log(data);
+        //         })
+        //         .catch(error => {
+        //             console.error('Error fetching data:', error);
+        //         });
+        // }
+
+        // getStudent();
+    </script>
+</body>
+
+</html>
