@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <input type="text" id="name" placeholder="name">
+    <input type="email" id="email" placeholder="email">
+    <button id="btn">Ok</button>
+    <h2 id="heading"></h2>
+    <script>
+        // ------> async and await 
+        // async function myFun() {
+        //     try {
+        //         const data = await fetch('https://fakestoreapi.com/products')
+        //         const here = await data.json()
+        //         console.log(here)
+        //     } catch (err) {
+        //         console.log(err)
+        //     }
+        // }
+        // ----> local storage
+        const name = document.getElementById('name')
+        const btn = document.getElementById('btn')
+        btn.addEventListener('click' , ()=>{
+            localStorage.setItem('name' ,name.value)
+            location.reload()
+        })
+        const newTag = document.getElementById('heading')
+        window.addEventListener('load' , ()=>{
+            const localValue = localStorage.getItem('name')
+            newTag.innerHTML = localValue
+        })
+    </script>
+</body>
+
+</html>
