@@ -10,6 +10,7 @@
     <input type="text" id="name" placeholder="name">
     <input type="email" id="email" placeholder="email">
     <button id="btn">Ok</button>
+    <button id="deleteBtn">Delete</button>
     <h2 id="heading"></h2>
     <script>
         // ------> async and await 
@@ -29,11 +30,19 @@
             localStorage.setItem('name' ,name.value)
             location.reload()
         })
-        const newTag = document.getElementById('heading')
-        window.addEventListener('load' , ()=>{
-            const localValue = localStorage.getItem('name')
-            newTag.innerHTML = localValue
-        })
+          // Deleting the name from local storage and reloading the page
+          const deleteBtn = document.getElementById('deleteBtn');
+        deleteBtn.addEventListener('click', () => {
+            localStorage.removeItem('name');
+            location.reload();
+        });
+
+        // Displaying the stored name on page load
+        const newTag = document.getElementById('heading');
+        window.addEventListener('load', () => {
+            const localValue = localStorage.getItem('name');
+            newTag.innerHTML = localValue ? localValue : 'No name stored';
+        });
     </script>
 </body>
 
