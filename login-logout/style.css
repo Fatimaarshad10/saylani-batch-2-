@@ -50,7 +50,7 @@ a{
     align-items: center;
 
 }
-form{
+.form{
     display: flex;
     flex-direction: column;
     background-color: rgb(160, 195, 155);
