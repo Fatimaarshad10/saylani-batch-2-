@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom'
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Login', href: '/login', current: false },
+  { name: 'Hero', href: '/hero', current: false },
+  { name: 'Card', href: '/card', current: false },
+
+
 ]
 
 function classNames(...classes) {
@@ -37,7 +41,12 @@ export default function Navbar() {
               <div className="flex space-x-4">
 
                 <Link to='/' ><p className='text-white'>Home</p></Link>
-                <Link to='/Login' ><p className='text-white'>Login</p></Link>
+                <Link to='/Login'><p className='text-white'>Login</p></Link>
+                <Link to='/hero'><p className='text-white'>Hero</p></Link>
+                <Link to='/card'><p className='text-white'>Card</p></Link>
+                <Link to='/input'><p className='text-white'>Input</p></Link>
+
+
 
                 {/* {navigation.map((item) => (
                   <Link
