@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import Hero from "./hero";
 import Card from "./card";
 import Input from "./input";
+import ListApp from "./ListApp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
           <Route path='/hero' element={<Hero/>}/>
           <Route path='/card' element={<Card/>}/>
           <Route path='/input' element={<Input/>}/>
-
-
+          <Route path='/list' element={<ListApp/>}/>
         </Routes>
       </BrowserRouter>
     </>

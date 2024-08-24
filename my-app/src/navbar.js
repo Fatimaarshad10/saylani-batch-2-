@@ -7,6 +7,8 @@ const navigation = [
   { name: 'Login', href: '/login', current: false },
   { name: 'Hero', href: '/hero', current: false },
   { name: 'Card', href: '/card', current: false },
+  { name: 'List', href: '/list', current: false },
+
 
 
 ]
@@ -45,6 +47,8 @@ export default function Navbar() {
                 <Link to='/hero'><p className='text-white'>Hero</p></Link>
                 <Link to='/card'><p className='text-white'>Card</p></Link>
                 <Link to='/input'><p className='text-white'>Input</p></Link>
+                <Link to='/list'><p className='text-white'>List</p></Link>
+
 
 
 
