@@ -1,20 +1,10 @@
-import { useState } from "react"
- function Home() {
-    const [count , setCount] = useState(0)
-    function increase(){
-        setCount(count + 1 )
-    }
-    function decrease(){
-        setCount(count -1)
-    }
+function Home(props) {
   return (
     <div>
-         <h1>{count}</h1>
-         <img src="https://i.imgur.com/yXOvdOSs.jpg" alt="image"/>
-         <button onClick={increase}>Increase</button>
-         <button onClick={decrease}>Decrease</button>
+      <h1>Home Page</h1>
+     <h1>{props.newData}</h1>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
