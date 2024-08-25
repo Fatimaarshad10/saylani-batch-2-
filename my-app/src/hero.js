@@ -1,7 +1,8 @@
-export default function Hero() {
+export default function Hero(props) {
 
   return (
     <div className="bg-white">
+      <h1 className="text-black">{props.newData}</h1>
       <div className="relative isolate px-6 mt-32 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <div className="text-center">

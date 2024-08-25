@@ -7,14 +7,15 @@ import Input from "./input";
 import ListApp from "./ListApp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+  const name = localStorage.getItem('name')
   return (
     <>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path='/hero' element={<Hero/>}/>
+          <Route path="/" element={<Home newData={name} />} />
+          <Route path="/login" element={<Login  newData={name}/>} />
+          <Route path='/hero' element={<Hero newData={name}/>}/>
           <Route path='/card' element={<Card/>}/>
           <Route path='/input' element={<Input/>}/>
           <Route path='/list' element={<ListApp/>}/>

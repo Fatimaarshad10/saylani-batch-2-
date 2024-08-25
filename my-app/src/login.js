@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-function Login() {
+function Login(props) {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState('');
 
@@ -20,6 +20,7 @@ function Login() {
 
   return (
     <div>
+      <h1>{props.newData}</h1>
       <h1>To-Do List</h1>
       <input
         type="text"
