@@ -82,15 +82,5 @@ This module introduces Firebase for building full-stack web applications:
 - **Firebase**
 
 ---
-
-## **Course Duration**
-The course runs for **1 year**, with each module covering in-depth concepts to ensure you build a strong foundation in web development. 
-
----
-
-## **Prerequisites**
-- Basic understanding of computers.
-- Enthusiasm to learn web development!
-- 
 Happy Coding!
 
