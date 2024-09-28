@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./images/1722114483466.jpg" alt="Web Development Course" width="400" />
+</p>
 # **Web Development Course (One-Year)**
 
 Welcome to the One-Year Web Development Course! This course is designed to take you from beginner to advanced in web development, covering front-end technologies like HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React.js with hooks, as well as Firebase integration for building full-stack applications.
