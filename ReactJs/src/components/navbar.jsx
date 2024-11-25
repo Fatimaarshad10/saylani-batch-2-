@@ -32,6 +32,9 @@ function Navbar() {
               <Link to="/login" className="nav-item">
                 Login
               </Link>
+              <Link to="/user/register" className="nav-item">
+                User Register
+              </Link>
             </>
           ) : (
             <>

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/navbar"
 import NewProduct from "./components/newproducts"
 import AllProducts from './components/allproducts'
+import UserRegister from "./components/userRegister"
 export const Store = createContext()
 function App() {
   const [username, setUsername] = useState('amna')
@@ -22,6 +23,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/product" element={<NewProduct />} />
             <Route path="/all/product" element={<AllProducts />} />
+            <Route path="/user/register" element={<UserRegister />} />
 
 
           </Routes>
