@@ -75,6 +75,12 @@ This module introduces Firebase for building full-stack web applications:
 
 ---
 
+
+### **Module 6: Backend (Node JS , Express JS , Mongodb)**
+
+  
+---
+
 ## **Tools and Technologies**
 - **HTML5**
 - **CSS3**
@@ -84,7 +90,8 @@ This module introduces Firebase for building full-stack web applications:
 - **Sass**
 - **React.js**
 - **Firebase**
-
+- **Node js**
+- **Express Js**
 ---
 Happy Coding!
 
